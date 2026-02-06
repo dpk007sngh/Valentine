@@ -56,9 +56,9 @@ h1{
 
 .photo img{
   width: 100%;
-  height: 420px;
-  object-fit: cover;
-  object-position: center top;
+  height: 520px;              /* taller image */
+  object-fit: contain;        /* show full photo */
+  background: #f3e8ee;        /* soft fill behind image */
   display: block;
 }
 
@@ -120,14 +120,6 @@ h1{
 }
 @media (max-width: 600px) {
   .photo img {
-    height: 300px;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-
-  .question h2 {
-    font-size: 22px;
+    height: 360px;
   }
 }
